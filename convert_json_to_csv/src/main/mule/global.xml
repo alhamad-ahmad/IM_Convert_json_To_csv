@@ -47,7 +47,7 @@ http://www.mulesoft.org/schema/mule/api-gateway http://www.mulesoft.org/schema/m
 	<!-- db:config name="Database_Config_PRD" doc:name="Database Config" doc:id="9ccacdc4-4f2e-447f-ab1b-0e3695017d46" >
 		<db:mssql-connection host="eaidemodb.database.windows.net" port="1433" user="itumatestcaseuser" password=" 9RiYuJ7L7HqU]{nT" databaseName="itumatestcase" />
 	</db:config -->
-	<api-gateway:autodiscovery apiId="183246" ignoreBasePath="true" doc:name="API Autodiscovery" doc:id="9139f122-aa61-4ed7-851a-2916dd9b3118" flowRef="jsontocsv-main" />
+	<api-gateway:autodiscovery apiId="${api.autodiscovery}" ignoreBasePath="true" doc:name="API Autodiscovery" doc:id="9139f122-aa61-4ed7-851a-2916dd9b3118" flowRef="jsontocsv-main" />
 	<error-handler name="globalError_Handler" doc:id="6b592015-c13d-4c07-9acd-d86ad678bab3" >
 		
 		<on-error-propagate enableNotifications="true" logException="true" doc:name="On Error Propagate" doc:id="88009e2f-39c1-452e-a451-b1493272f2bc" type="ANY">
